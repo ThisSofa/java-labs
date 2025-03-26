@@ -128,3 +128,4 @@ public class Main {
         return Math.pow(product, 1.0 / count); ///беремо корінь n-го ступеня
     }
 }
+
