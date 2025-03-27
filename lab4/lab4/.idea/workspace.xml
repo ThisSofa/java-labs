@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f2eb2d4-225b-4618-a957-c7af2af6e808" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../lab3/lab3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/lab3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/DepartmentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/DepartmentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/FacultyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/FacultyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ProfessorCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProfessorCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eater/HumanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eater/HumanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/eater/JsonManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/eater/JsonManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/eater/AreYouOkay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/eater/AreYouOkay.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ThisSofa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ThisSofa/java-labs.git&quot;,
+    &quot;accountId&quot;: &quot;86f0ce91-659d-4ab8-bf78-e24e8532a2f1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2usZJ6fHdBDWvucCaThXAgwruyv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Run.executor": "Run",
+    "JUnit.AreYouOkay.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lab4",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f2eb2d4-225b-4618-a957-c7af2af6e808" name="Changes" comment="" />
+      <created>1743039170512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743039170512</updated>
+    </task>
+    <servers />
+  </component>
+</project>
