@@ -1,0 +1,174 @@
+{
+  "name": "Національний технічний університет Дніпровська Політехніка",
+  "rector": {
+    "type": "Human",
+    "data": {
+      "lastName": "Азюковський",
+      "firstName": "Олександр",
+      "middleName": "Олександрович",
+      "gender": "MALE"
+    }
+  },
+  "faculties": [
+    {
+      "name": "Факультет інформаційних технологій",
+      "head": {
+        "type": "Human",
+        "data": {
+          "lastName": "Удовик",
+          "firstName": "Ірина",
+          "middleName": "Михайлівна",
+          "gender": "FEMALE"
+        }
+      },
+      "departments": [
+        {
+          "name": "ПЗКС",
+          "head": {
+            "type": "Human",
+            "data": {
+              "lastName": "Мартиненко",
+              "firstName": "Андрій",
+              "middleName": "Анатольйович",
+              "gender": "MALE"
+            }
+          },
+          "groups": [
+            {
+              "name": "122-21-1",
+              "head": {
+                "type": "Human",
+                "data": {
+                  "lastName": "Шолойко",
+                  "firstName": "Софія",
+                  "middleName": "Андріївна",
+                  "gender": "FEMALE"
+                }
+              },
+              "students": [
+                {
+                  "lastName": "Іван",
+                  "firstName": "Петров",
+                  "middleName": "Олександрович",
+                  "gender": "MALE"
+                },
+                {
+                  "lastName": "Олена",
+                  "firstName": "Сидорова",
+                  "middleName": "Ігорівна",
+                  "gender": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "122-21-2",
+              "head": {
+                "type": "Human",
+                "data": {
+                  "lastName": "Іваненко",
+                  "firstName": "Дмитро",
+                  "middleName": "Олександрович",
+                  "gender": "MALE"
+                }
+              },
+              "students": [
+                {
+                  "lastName": "Андрій",
+                  "firstName": "Коваленко",
+                  "middleName": "Сергійович",
+                  "gender": "MALE"
+                },
+                {
+                  "lastName": "Наталія",
+                  "firstName": "Павленко",
+                  "middleName": "Андріївна",
+                  "gender": "FEMALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Комп\u0027ютерні науки",
+          "head": {
+            "type": "Human",
+            "data": {
+              "lastName": "Коваленко",
+              "firstName": "Наталія",
+              "middleName": "Олегівна",
+              "gender": "FEMALE"
+            }
+          },
+          "groups": [
+            {
+              "name": "123-21-1",
+              "head": {
+                "type": "Human",
+                "data": {
+                  "lastName": "Мельник",
+                  "firstName": "Анна",
+                  "middleName": "Ігорівна",
+                  "gender": "FEMALE"
+                }
+              },
+              "students": []
+            },
+            {
+              "name": "123-21-2",
+              "head": {
+                "type": "Human",
+                "data": {
+                  "lastName": "Петренко",
+                  "firstName": "Михайло",
+                  "middleName": "Володимирович",
+                  "gender": "MALE"
+                }
+              },
+              "students": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Факультет машинобудування",
+      "head": {
+        "type": "Human",
+        "data": {
+          "lastName": "Сидоренко",
+          "firstName": "Петро",
+          "middleName": "Іванович",
+          "gender": "MALE"
+        }
+      },
+      "departments": [
+        {
+          "name": "Двигуни внутрішнього згоряння",
+          "head": {
+            "type": "Human",
+            "data": {
+              "lastName": "Павленко",
+              "firstName": "Віктор",
+              "middleName": "Сергійович",
+              "gender": "MALE"
+            }
+          },
+          "groups": []
+        },
+        {
+          "name": "Автомобілебудування",
+          "head": {
+            "type": "Human",
+            "data": {
+              "lastName": "Шевченко",
+              "firstName": "Ольга",
+              "middleName": "Василівна",
+              "gender": "FEMALE"
+            }
+          },
+          "groups": []
+        }
+      ]
+    }
+  ]
+}
