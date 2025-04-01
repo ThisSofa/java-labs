@@ -11,41 +11,33 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Инициализация базы данных
-        DatabaseManager.initDatabase();
+        DatabaseManager.initDatabase(); ///ініціалізуємо базу даних
 
-        // Сканер для ввода месяца
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); ///заводимо пилосос
         System.out.print("Введіть номер місяця (1-12): ");
-        int month = scanner.nextInt();
+        int month = scanner.nextInt(); ///пилососимо дані
 
-        // Получаем всех студентов из базы данных
-        List<Student> allStudents = DatabaseManager.getAllStudents();
+        List<Student> allStudents = DatabaseManager.getAllStudents(); ///тягнема дані з бд
 
-        // Указываем формат даты
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-
-        // Фильтруем студентов по выбранному месяцу
-        List<Student> filteredStudents = allStudents.stream()
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); ///дата любить бути кривою
+        List<Student> filteredStudents = allStudents.stream() ///фільтруємо студентів за обраним місяцем
                 .filter(student -> {
                     try {
-                        // Преобразуем строку в LocalDate с использованием формата
-                        LocalDate birthDate = LocalDate.parse(student.getBirthDate(), formatter);
-                        return birthDate.getMonthValue() == month;
+                        LocalDate birthDate = LocalDate.parse(student.getBirthDate(), formatter); ///парсинг
+                        return birthDate.getMonthValue() == month; ///перевіряємо збіг місяця
                     } catch (Exception e) {
-                        // Если возникла ошибка при парсинге даты, игнорируем этого студента
-                        System.err.println("Помилка парсингу дати: " + student.getBirthDate());
-                        return false;
+                        System.err.println("Помилка парсингу дати: " + student.getBirthDate());  ///якщо щось пішло не так (наприклад, хтось народився 32 січня)
+                        return false; ///пропускаємо такого "унікума"
                     }
                 })
-                .collect(Collectors.toList());
+                .collect(Collectors.toList()); ///збираємо результат у список
 
-        // Выводим результат
-        if (filteredStudents.isEmpty()) {
-            System.out.println("Немає студентів, народжених у цьому місяці.");
+        if (filteredStudents.isEmpty()) { ///виводимо результат
+            System.out.println("Нє, таких нєма");
         } else {
-            System.out.println("Студенти, народжені у вибраному місяці:");
-            filteredStudents.forEach(System.out::println);
+            System.out.println("Оп-оп, вполососили данні:");
+            filteredStudents.forEach(System.out::println); ///виводимо всіх знайдених
         }
+        scanner.close(); ///глушимо пилосос
     }
 }

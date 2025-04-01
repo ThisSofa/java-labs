@@ -7,23 +7,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseManager {
-    private static final String URL = "jdbc:postgresql://localhost:5432/students";
+    private static final String URL = "jdbc:postgresql://localhost:5432/students"; /// JDBC URL для підключення до PostgreSQL
     private static final String USER = "user";
     private static final String PASSWORD = "password";
 
-    public static void initDatabase() {
-        System.out.println("Підключення до бази даних успішне!");
+
+    public static void initDatabase() {  /// метод для ніціалізації
+        System.out.println("Шота підключилося, напевно бд");
     }
 
-    public static List<Student> getAllStudents() {
-        List<Student> students = new ArrayList<>();
-        String query = "SELECT * FROM students";
 
-        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-             Statement statement = connection.createStatement();
+    public static List<Student> getAllStudents() { /// откримуємо усіх обовтусів з бд
+        List<Student> students = new ArrayList<>(); ///створюємо новий список
+        String query = "SELECT * FROM students"; // SQL-запит для отримання усіх студентів
+
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);  ///відкриваємо з'єднання з бд
+             Statement statement = connection.createStatement(); ///виконуємо запит
              ResultSet resultSet = statement.executeQuery(query)) {
 
-            while (resultSet.next()) {
+            while (resultSet.next()) {    ///проходимося по усім строкам результата запита
                 students.add(new Student(
                         resultSet.getInt("id"),
                         resultSet.getString("last_name"),
@@ -34,8 +36,8 @@ public class DatabaseManager {
                 ));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            e.printStackTrace(); ///це якщо помилка буде
         }
-        return students;
+        return students; ///видаємо що там нашреблося
     }
 }
