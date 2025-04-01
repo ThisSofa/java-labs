@@ -1,9 +1,12 @@
 -- Дозволяємо підключення з будь-якого джерела
 ALTER SYSTEM SET listen_addresses = '*';
-GRANT ALL PRIVILEGES ON DATABASE students TO user;
--- Створення таблиці 
+
+-- Надаємо права користувачу
+GRANT ALL PRIVILEGES ON DATABASE students TO "user";
+
+-- Створення таблиці
 CREATE TABLE IF NOT EXISTS students (
-    id SERIAL PRIMARY KEY,  
+    id SERIAL PRIMARY KEY,
     last_name VARCHAR(50) NOT NULL,
     first_name VARCHAR(50) NOT NULL,
     middle_name VARCHAR(50),
@@ -44,4 +47,7 @@ VALUES
     ('Бойко', 'Алла', 'Володимирівна', '2000-01-29', '036789'),
     ('Герасименко', 'Роман', 'Олександрович', '2001-02-14', '032012'),
     ('Терещенко', 'Лариса', 'Петрівна', '2002-03-27', '039345')
-ON CONFLICT (record_book_number) DO NOTHING;  -- Ігноруємо конфлікти унікальних значень
+ON CONFLICT (record_book_number) DO NOTHING;
+
+-- Додаткові права на послідовність для автоінкременту
+GRANT USAGE, SELECT ON SEQUENCE students_id_seq TO "user";
