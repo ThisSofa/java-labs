@@ -1,18 +1,19 @@
-ALTER SYSTEM SET listen_addresses = '*';  --підключення звідкілля завгодно
+-- Дозволяємо підключення з будь-якого джерела
+ALTER SYSTEM SET listen_addresses = '*';
 
--- Створення таблиці
+-- Створення таблиці 
 CREATE TABLE IF NOT EXISTS students (
-                                        id INT AUTO_INCREMENT PRIMARY KEY,
-                                        last_name VARCHAR(50) NOT NULL,
+    id SERIAL PRIMARY KEY,  
+    last_name VARCHAR(50) NOT NULL,
     first_name VARCHAR(50) NOT NULL,
     middle_name VARCHAR(50),
     birth_date DATE NOT NULL,
     record_book_number VARCHAR(20) UNIQUE NOT NULL
-    );
---заповнюємо обовтусами
-MERGE INTO students (last_name, first_name, middle_name, birth_date, record_book_number)
-    KEY (record_book_number)
-    VALUES
+);
+
+-- Заповнюємо таблицю обовтусами
+INSERT INTO students (last_name, first_name, middle_name, birth_date, record_book_number)
+VALUES
     ('Іваненко', 'Олег', 'Сергійович', '2001-02-15', '029673'),
     ('Петров', 'Андрій', 'Миколайович', '2000-03-20', '0352742'),
     ('Сидоренко', 'Марія', 'Олександрівна', '2002-04-10', '02952'),
@@ -42,4 +43,5 @@ MERGE INTO students (last_name, first_name, middle_name, birth_date, record_book
     ('Захарченко', 'Михайло', 'Юрійович', '2002-12-03', '030456'),
     ('Бойко', 'Алла', 'Володимирівна', '2000-01-29', '036789'),
     ('Герасименко', 'Роман', 'Олександрович', '2001-02-14', '032012'),
-    ('Терещенко', 'Лариса', 'Петрівна', '2002-03-27', '039345');
+    ('Терещенко', 'Лариса', 'Петрівна', '2002-03-27', '039345')
+ON CONFLICT (record_book_number) DO NOTHING;  -- Ігноруємо конфлікти унікальних значень
