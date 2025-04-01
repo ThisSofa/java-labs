@@ -1,6 +1,6 @@
 -- Дозволяємо підключення з будь-якого джерела
 ALTER SYSTEM SET listen_addresses = '*';
-
+GRANT ALL PRIVILEGES ON DATABASE students TO user;
 -- Створення таблиці 
 CREATE TABLE IF NOT EXISTS students (
     id SERIAL PRIMARY KEY,  

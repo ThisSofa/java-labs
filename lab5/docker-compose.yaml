@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       POSTGRES_DB: students
-      POSTGRES_USER: user
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: password
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
